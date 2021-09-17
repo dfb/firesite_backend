@@ -24,3 +24,6 @@ exports.main = firesite.jsonapis.Expose({login:firesite.users.login});
 
 # Usage
 If all you need to do is support logging in, the instructions in the Setup section are sufficient. If you want to expose additional cloud functions to call from your website, define them and expose them in the `firesite.jsonapis.Expose` line. See `jsonapis.js` for information on conventions, especially on controlling access. Be careful that you don't expose powerful functions to anonymous users!
+
+To deploy modifications: `firebsae deploy --only functions`
+
