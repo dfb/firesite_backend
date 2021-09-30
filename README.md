@@ -12,15 +12,7 @@ It is assumed that you've already been through the setup work for setting up a F
 1. `cd` into the functions dir.
 1. Run `git clone git@github.com:dfb/firesite_backend.git firesite`
 1. Run `npm i uuid firebase-admin firebase-functions`.
-1. Create an index.js with the following:
-
-```js
-// main entry point for all backend functions
-const admin = require('firebase-admin');
-admin.initializeApp();
-const firesite = require('./firesite');
-exports.main = firesite.jsonapis.Expose({login:firesite.users.login});
-```
+1. Run `cp firesite/starter_files/* .`
 
 # Usage
 If all you need to do is support logging in, the instructions in the Setup section are sufficient. If you want to expose additional cloud functions to call from your website, define them and expose them in the `firesite.jsonapis.Expose` line. See `jsonapis.js` for information on conventions, especially on controlling access. Be careful that you don't expose powerful functions to anonymous users!
