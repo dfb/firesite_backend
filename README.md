@@ -11,7 +11,7 @@ It is assumed that you've already been through the setup work for setting up a F
 1. Create a 'functions' directory if one does not already exist (and if it did not exist, run 'npm init' in it).
 1. `cd` into the functions dir.
 1. Run `git clone git@github.com:dfb/firesite_backend.git firesite`
-1. Run `npm i uuid firebase-admin firebase-functions`.
+1. Run `npm i uuid firebase-admin firebase-functions`
 1. Run `cp firesite/starter_files/* .`
 
 # Usage
